@@ -1,0 +1,31 @@
+//- Declaration
+mixin select(name, ...items)
+  .select
+    input.select__input(name=name type="hidden")
+    .select__placeholder= items[0]
+    .select__items
+      each item in items
+        .select__item(data-text=item data-value=item )= item
+      
+//- Declaration
+mixin radio(name, ...items)
+  .radio
+    input.radio__input(name=name type="hidden")
+    .radio__items
+      each item in items
+       .radio__item(data-value=item )= item
+
+mixin list(list_class,item_class,link_class, ...items)
+  ul.list(class= list_class)
+    each item in items
+      li.list__item
+        a.list__link(href="#" class= link_class)= item
+
+
+mixin breadcrumbs(last, ...items)
+  ul.breadcrumbs
+    each item in items
+      li.breadcrumbs__item
+        a.breadcrumbs__link(href="#")= item
+    li.breadcrumbs__item
+        = last

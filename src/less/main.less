@@ -1,0 +1,178 @@
+ /* imports */
+@import "./imports/_mixins.less";
+@import "./imports/_grid.less";
+@import "./imports/_variables.less";
+@import "./imports/_fonts.less";
+
+
+ html {
+   box-sizing: border-box;
+   outline: none;
+ }
+
+ *, *:before, *:after {
+   box-sizing: inherit;
+   outline: inherit;
+ }
+
+ body {
+   font-family: 'Circe', 'Roboto', sans-serif;
+   font-weight: normal;
+   font-size: 18px;
+
+   line-height: 28px;
+
+   color: @color-font;
+ }
+
+ .btn {
+   padding: 0 35px;
+   height: 55px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 23px;
+
+   transition: background-color 0.3s ease-in-out;
+   cursor: pointer;
+
+   &--dark {
+     background-color: @color-blue-dark;
+     &:hover {
+       background-color: lighten(@color-blue-dark, 10%);
+     }
+   }
+ }
+
+ .link {
+   transition: color 0.3s ease-in-out;
+   &--white {
+     color: @color-white;
+     &:hover {
+       color: @color-font-blue;
+     }
+   }
+ }
+ .img {
+   &--responsive {
+     width: 100%;
+     height: auto;
+   }
+ }
+ .header {
+   padding-top: 40px;
+   padding-bottom: 40px;
+
+   &--fixed {
+     position: fixed;
+   }
+
+   &__parts {
+
+   }
+
+   &__part {
+     &--address {
+       display: none;
+     }
+     &--phones {
+
+     }
+   }
+ }
+
+ .section {
+   padding-top: 50px;
+   padding-bottom: 50px;
+
+   &--intro {
+     background-image: linear-gradient(128deg, #005dc2 36%, #2577d0);
+     padding-top: 120px;
+     padding-bottom: 50px;
+
+     @media @desktop {
+       background-image: none;
+       background-color: @color-gray;
+       height: 700px;
+     }
+   }
+
+   &--map {
+     padding: 0;
+   }
+
+   &__title {
+     margin-top: 0;
+     span {
+       color: @color-font-blue;
+     }
+   }
+
+   &__text {
+
+   }
+ }
+
+ .intro {
+   color: @color-white;
+
+   @media @desktop {
+     display: flex;
+     align-items: center;
+   }
+
+   &__title {
+     font-size: 30px;
+     font-weight: bold;
+     margin-bottom: 13px;
+
+     @media @desktop {
+       font-size: 48px;
+       margin-bottom: 5px;
+     }
+   }
+
+   &__text {
+     margin-bottom: 33px;
+   }
+
+   &__btn {
+
+   }
+
+   &__img {
+     display: none;
+     @media @desktop {
+       display:block;
+     }
+   }
+ }
+
+ .map {
+   height: 390px;
+   background-image: linear-gradient(to bottom, #e2e5ec, #e2e5ec);
+ }
+
+ .footer {
+   padding-top: 50px;
+   padding-bottom: 50px;
+
+   background-color: @color-blue-dark;
+   &__text {
+     color: #ffffff;
+   }
+   &__link {
+     text-decoration: none;
+
+   }
+ }
+
+ .footer-parts {
+
+   display: flex;
+   justify-content: space-between;
+
+   &__part {
+    flex-basis: 30%;
+   }
+ }
