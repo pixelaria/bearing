@@ -11,16 +11,19 @@
   </head>
   <header class="header header--fixed">
     <div class="container header__container">
-      <div class="header__part header__part--address">Калининград, ул. Каштановая аллея, 177 Б  |  Советск, ул. Александра Невского, 2 Б</div>
-      <div class="header__part header__part--contacts"></div>
+      <div class="header__parts">
+        <div class="header__part header__part--address">Калининград, ул. Каштановая аллея, 177 Б  |  Советск, ул. Александра Невского, 2 Б</div>
+        <div class="header__part header__part--phones">+74012 915 333, 57-17-91, 57-17-92</div>
+      </div>
     </div>
   </header>
   <body class="body">
     <main class="main">
       <section class="section section--intro">
         <div class="section-intro">
-          <div class="section-intro__part section-intro__part--blue"></div>
-          <div class="section-intro__part section-intro__part--gray"></div>
+          <div class="section-intro__part section-intro__part--blue">
+            <div class="section-intro__borders"></div>
+          </div>
         </div>
         <div class="container">
           <div class="intro">
@@ -34,8 +37,13 @@
       </section>
       <section class="section section--info">
         <div class="container">
-          <h2 class="section__title"><span>Детали</span>от ведущего производителя</h2>
-          <p class="section__text">  Мы уделяем большое внимание качеству и срокам поставок. Мир Подшипников – официальный представитель ведущего мирового производителя подшипников SKF. На нашем складе имеется широкий, постоянно обновляемый ассортимент продукции. Гибкая ценовая политика, система скидок для оптовых покупателей.</p>
+          <div class="infoblock">
+            <div class="infoblock__desc">
+              <h2 class="section__title"><span>Детали</span>от ведущего производителя</h2>
+              <p class="section__text">Мы уделяем большое внимание качеству и срокам поставок. Мир Подшипников – официальный представитель ведущего мирового производителя подшипников SKF. На нашем складе имеется широкий, постоянно обновляемый ассортимент продукции. Гибкая ценовая политика, система скидок для оптовых покупателей.</p>
+            </div>
+            <div class="infoblock__img"><img class="img img--responsive" src="/img/bearing.png"></div>
+          </div>
         </div>
       </section>
       <section class="section section--map">
@@ -45,19 +53,21 @@
   </body>
   <footer class="footer">
     <div class="container">
-      <div class="foooter-parts">
-        <div class="foooter-parts__part">
+      <div class="footer-parts">
+        <div class="footer-parts__part">
           <p class="footer__text">Калининград, Каштановая аллея, 177Б</p><a class="footer__link link link--white" href="tel:84012564488">+7 (4012) 56-44-88</a>
         </div>
-        <div class="foooter-parts__part">
+        <div class="footer-parts__part">
           <p class="footer__text">Советск, ул. Александра Невского, 2Б</p><a class="footer_link link link--white" href="tel:84016135200">+7 (40161) 3-52-00</a>
         </div>
-        <div class="foooter-parts__part"><a class="footer__link link link--white" href="mailto:selektav@mail.ru">selektav@mail.ru, selektgr@mail.ru</a>
+        <div class="footer-parts__part"><a class="footer__link link link--white" href="mailto:selektav@mail.ru">selektav@mail.ru, selektgr@mail.ru</a>
           <p class="footer__text">Все права защищены</p>
         </div>
       </div>
     </div>
   </footer>
+  <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUlags8KVbNQxTok7RlaJNVUDtuJ0lRxU&amp;callback=initMap"></script>
   <script src="/js/libs.min.js"></script>
   <script src="/js/bundle.js"></script>
 </html>

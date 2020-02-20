@@ -9,7 +9,7 @@ html(lang="ru")
       section.section.section--intro
         .section-intro
           .section-intro__part.section-intro__part--blue
-          .section-intro__part.section-intro__part--gray
+              .section-intro__borders
         .container
           .intro
             .intro__desc
@@ -20,10 +20,14 @@ html(lang="ru")
               img.img.img--responsive(src="/img/car.png")
       section.section.section--info
         .container
-          h2.section__title
-            span Детали
-            | от ведущего производителя
-          p.section__text   Мы уделяем большое внимание качеству и срокам поставок. Мир Подшипников – официальный представитель ведущего мирового производителя подшипников SKF. На нашем складе имеется широкий, постоянно обновляемый ассортимент продукции. Гибкая ценовая политика, система скидок для оптовых покупателей.
+          .infoblock
+            .infoblock__desc
+                h2.section__title
+                    span Детали
+                    | от ведущего производителя
+                p.section__text Мы уделяем большое внимание качеству и срокам поставок. Мир Подшипников – официальный представитель ведущего мирового производителя подшипников SKF. На нашем складе имеется широкий, постоянно обновляемый ассортимент продукции. Гибкая ценовая политика, система скидок для оптовых покупателей.
+            .infoblock__img
+                img.img.img--responsive(src="/img/bearing.png")
       section.section.section--map
         .map#map
   include includes/footer.pug
